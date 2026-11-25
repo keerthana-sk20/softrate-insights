@@ -107,6 +107,96 @@ export const demoArticles = [
     publishedAt: "2025-02-03T10:00:00.000Z",
     featured: false,
     readTime: 4
+  },
+  {
+    _id: "demo-8",
+    slug: "from-ai-pilot-to-useful-everyday-practice",
+    title: "From AI pilot to useful everyday practice",
+    excerpt: "An AI experiment becomes valuable when it fits a real workflow, earns trust, and has a clear way to measure whether it helps.",
+    content: `## Begin with a real workflow
+
+It is easy to start with a tool and search for a place to use it. A more useful starting point is a task people already find repetitive, slow, or difficult to navigate. Talk with the people who do that work and understand what a good outcome looks like before choosing a model or platform.
+
+Keep the first experiment narrow. A team might use AI to organize incoming requests, find relevant material in an approved knowledge base, or draft a first pass for a person to review. A small scope makes it easier to notice where the system is useful and where it needs help.
+
+## Make evaluation part of the work
+
+Before a pilot begins, collect representative examples and agree on how results will be reviewed. Check not only whether an answer sounds convincing, but whether it is accurate, useful, and appropriate for the task. Include unusual cases and examples where the right response is to ask for human judgment.
+
+Give people a clear way to correct outputs and report problems. Those observations can reveal missing context, confusing instructions, or a workflow that should be redesigned rather than automated.
+
+## Plan for trust after launch
+
+Decide what information the system can use, who can access it, and who is responsible for reviewing its performance. Explain its limits to users and make it easy to escalate uncertain or sensitive work.
+
+Useful AI is rarely a one-time installation. It is a product choice that should be revisited as needs change. Starting with a real problem, measuring outcomes, and keeping people in control gives a promising pilot a practical path toward everyday use.`,
+    author: "Softrate Editorial",
+    category: "Artificial Intelligence & Machine Learning",
+    tags: ["AI", "Workflow", "Responsible technology"],
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=85",
+    publishedAt: "2026-11-18T10:00:00.000Z",
+    featured: false,
+    readTime: 3
+  },
+  {
+    _id: "demo-9",
+    slug: "reliable-releases-start-with-small-changes",
+    title: "Reliable releases start with small changes",
+    excerpt: "Smaller releases help teams understand what changed, learn from feedback, and recover with less guesswork.",
+    content: `## Make each change easier to understand
+
+When a release contains many unrelated changes, it can be difficult to tell which one caused an unexpected result. Keeping work focused makes reviews clearer and gives the team a more useful signal after deployment.
+
+That does not mean every change needs a complicated release process. Agree on a shared definition of ready, automate repeatable checks, and make sure reviewers can see the reason for the change as well as the code.
+
+## Put recovery in the plan
+
+Testing matters, but no test suite can anticipate every condition in production. Before a change goes out, know how the team will notice a problem and what options are available to respond. Depending on the system, that may mean a rollback, a feature flag, or a small corrective release.
+
+Useful monitoring connects technical signals to user experience. A dashboard is most helpful when the team knows which measures matter, what normal looks like, and who will investigate an unusual change.
+
+## Learn after delivery
+
+Deployment is not the finish line. Check whether the change solved the original problem, listen for user feedback, and record lessons while the details are fresh. If something went wrong, focus on understanding the conditions that made it possible and improving the process.
+
+Small, understandable releases create a steady learning loop: prepare carefully, observe the result, and adjust. Over time, that habit helps teams deliver change with more confidence and less drama.`,
+    author: "Softrate Editorial",
+    category: "Software Development",
+    tags: ["Engineering", "Releases", "Reliability"],
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85",
+    publishedAt: "2026-11-11T10:00:00.000Z",
+    featured: false,
+    readTime: 3
+  },
+  {
+    _id: "demo-10",
+    slug: "accessibility-belongs-in-product-quality",
+    title: "Accessibility belongs in product quality",
+    excerpt: "Designing for different ways of seeing, hearing, and navigating makes digital products clearer and more resilient for everyone.",
+    content: `## Include different needs from the beginning
+
+Accessibility works best as part of ordinary product decisions, not as a final review. Ask how people will navigate a screen with a keyboard, understand an image without seeing it, or use a control with assistive technology. These questions can shape the design before patterns become difficult to change.
+
+Clear headings, descriptive labels, readable contrast, and visible focus states help people understand where they are and what they can do. They also make interfaces easier to use in bright light, on a small screen, or when someone is moving quickly.
+
+## Test with more than a checklist
+
+Automated checks can catch some common issues, but they cannot tell a team whether an interaction makes sense to a person. Combine those checks with keyboard-only testing, screen-reader review, and feedback from people with different access needs.
+
+When a problem is found, make it actionable. Record the affected task, the barrier someone encountered, and the change that would help. This gives designers and engineers a shared way to prioritize improvements.
+
+## Keep quality visible
+
+Treat accessibility findings like other product issues: assign an owner, track progress, and revisit the experience after changes. A short review during design and development is easier to act on than a long list discovered just before launch.
+
+Inclusive design is not a separate feature for a small group. It is a way to make everyday experiences more understandable and dependable. When more people can use a product with confidence, the product is doing its job better.`,
+    author: "Softrate Editorial",
+    category: "Web and Mobile App Development",
+    tags: ["Accessibility", "Product design", "Inclusive design"],
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85",
+    publishedAt: "2026-11-04T10:00:00.000Z",
+    featured: false,
+    readTime: 3
   }
 ];
 

@@ -94,7 +94,7 @@ function useStoryData() {
       .then(([articleResult, categoryResult]) => {
         if (!active) return;
         const published = Array.isArray(articleResult) ? articleResult : articleResult.articles;
-        if (Array.isArray(published)) setStories(published);
+        if (Array.isArray(published) && published.length) setStories(published);
         if (Array.isArray(categoryResult) && categoryResult.length) setCategoriesList(categoryResult.map((item) => typeof item === "string" ? item : item.name));
       })
       .catch((error) => {
@@ -172,7 +172,7 @@ function HomePage({ stories, categoriesList }) {
         <div className="hero-feature-overlay" />
         <div className="feature-label"><span className="feature-pulse" /> EDITOR’S PICK</div>
         <div className="hero-feature-copy"><div className="article-meta light-meta"><span>{featured.category}</span><span className="meta-dot" />{formatDate(featured.publishedAt)}</div><h2>{featured.title}</h2><span className="feature-read">Read the story <Icon name="arrow" size={15} /></span></div>
-        <span className="feature-index">01 <span>/ 07</span></span>
+        <span className="feature-index">01 <span>/ {String(stories.length).padStart(2, "0")}</span></span>
       </Link>}
     </section>
 
