@@ -19,7 +19,7 @@ The app starts with example stories in the frontend so the visual experience is 
 
 ## Production
 
-Set `NODE_ENV=production`, `MONGO_URI`, `JWT_SECRET`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`, `CLIENT_ORIGIN`, and `SITE_URL` to deployment-specific values. Configure `VITE_GA_MEASUREMENT_ID` and `VITE_GOOGLE_SITE_VERIFICATION` if needed, then run:
+Set `NODE_ENV=production`, `MONGO_URI`, `JWT_SECRET`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`, `CLIENT_ORIGIN`, and `SITE_URL` to deployment-specific values. In Render, set `MONGO_URI` to the complete MongoDB connection string from your database provider; it must start with `mongodb://` or `mongodb+srv://` and must not include surrounding quotes. Configure `VITE_GA_MEASUREMENT_ID` and `VITE_GOOGLE_SITE_VERIFICATION` if needed, then run:
 
 ```powershell
 npm run build

@@ -98,9 +98,12 @@ app.use((error, _req, res, _next) => {
 });
 
 async function start() {
-  if (!process.env.MONGO_URI) throw new Error("MONGO_URI is required. Copy .env.example to .env and configure MongoDB.");
+  const mongoUri = process.env.MONGO_URI?.trim();
+  if (!mongoUri || !/^mongodb(?:\+srv)?:\/\//.test(mongoUri)) {
+    throw new Error("MONGO_URI must be a MongoDB connection string starting with mongodb:// or mongodb+srv://. Configure it in the deployment environment.");
+  }
   if (!process.env.JWT_SECRET || process.env.JWT_SECRET.length < 32) throw new Error("JWT_SECRET must be set to at least 32 characters.");
-  await mongoose.connect(process.env.MONGO_URI);
+  await mongoose.connect(mongoUri);
   await Category.bulkWrite(initialCategories.map((name) => ({
     updateOne: { filter: { name }, update: { $setOnInsert: { name } }, upsert: true }
   })));
